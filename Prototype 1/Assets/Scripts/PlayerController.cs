@@ -3,13 +3,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-        // Player movement, editable
-        public float speed = 20.0f;
-        public float turnSpeed = 100.0f;
-        // Input system action for movement, bind in the inspector
-        public InputAction moveAction;
-        // Store the input value for movement
-        private Vector2 moveInput;
+    // Player movement, editable
+    public float speed = 20.0f;
+    public float turnSpeed = 100.0f;
+    // Input system action for movement, bind in the inspector
+    public InputAction moveAction;
+    // Store the input value for movement
+    private Vector2 moveInput;
 
     // Enable the input action when the script is enabled
     void OnEnable()
