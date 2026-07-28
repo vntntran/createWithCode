@@ -718,6 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6938312387651818243}
   - component: {fileID: 3054616731992025386}
+  - component: {fileID: 3397652411666599833}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -767,6 +768,87 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3397652411666599833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601960498316592472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a81cf2e06ca5ec4e84f29ac9dc4f5ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveAction:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ad9733a1-2746-434e-944d-549fbfc8612e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: f3b6607d-cc4c-4b55-a6bc-40eb0da8bfaa
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 15ac8e2f-11bb-45c8-b53d-d0278b9bcdb6
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 1bd3c59f-980b-4010-94fc-e4f5c7bef059
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: e5553e38-c384-4273-bc43-e937c76b8610
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 126d6455-fa69-44d1-8daf-c878a9cc986e
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    m_Flags: 0
+  moveSpeed: 15
+  maxRange: 12
+  fireAction:
+    m_Name: Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d32769af-8946-4fc6-829b-c1b41f7bf9ff
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: cf8d7ef5-1bc3-4a40-86e5-fed152342ac2
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Fire
+      m_Flags: 0
+    m_Flags: 0
+  projectilePrefab: {fileID: 1964216298910836545, guid: 7316e98a33792f442b31dfd1c414b245, type: 3}
 --- !u!1 &5831799466362638663
 GameObject:
   m_ObjectHideFlags: 0
