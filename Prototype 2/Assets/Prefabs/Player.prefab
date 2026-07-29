@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 6938312387651818243}
   - component: {fileID: 3054616731992025386}
   - component: {fileID: 3397652411666599833}
+  - component: {fileID: 7461579792392504003}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -798,7 +799,7 @@ MonoBehaviour:
       m_Flags: 4
     - m_Name: up
       m_Id: 15ac8e2f-11bb-45c8-b53d-d0278b9bcdb6
-      m_Path: 
+      m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -806,7 +807,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: down
       m_Id: 1bd3c59f-980b-4010-94fc-e4f5c7bef059
-      m_Path: 
+      m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -830,7 +831,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   moveSpeed: 15
-  maxRange: 12
+  maxRangeX: 15
   fireAction:
     m_Name: Fire
     m_Type: 0
@@ -849,6 +850,27 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   projectilePrefab: {fileID: 1964216298910836545, guid: 7316e98a33792f442b31dfd1c414b245, type: 3}
+--- !u!65 &7461579792392504003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601960498316592472}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &5831799466362638663
 GameObject:
   m_ObjectHideFlags: 0
